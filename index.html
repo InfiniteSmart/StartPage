@@ -28,6 +28,13 @@
             nmonth = d.getMonth();
             ndaynumber = d.getDate();
 
+            if (nmin <= 9) {
+                nmin = "0" + nmin;
+            }
+            if (nhour <= 9) {
+                nhour = "0" + nhour;
+            }
+
             month = new Array(12);
             weekday = new Array(7);
             month[1] = "Ocak";
@@ -42,7 +49,7 @@
             month[10] = "Ekim";
             month[11] = "Kasım";
             month[12] = "Aralık";
-            weekday[0] =  "Pazar";
+            weekday[0] = "Pazar";
             weekday[1] = "Pazartesi";
             weekday[2] = "Salı";
             weekday[3] = "Çarşamba";
